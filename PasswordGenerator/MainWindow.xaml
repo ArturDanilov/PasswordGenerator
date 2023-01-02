@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PasswordGenerator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="515" Width="365" ResizeMode="NoResize" WindowStyle="ToolWindow">
+        Title="Password Generator 2000" Height="515" Width="365" ResizeMode="NoResize" WindowStyle="ThreeDBorderWindow">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#FF2E3240"/>
@@ -31,7 +31,7 @@
                 <Image Height="25" Width="25"/>
             </StackPanel>
         </Grid>
-        <TextBox Name="TB_PassOutput" HorizontalAlignment="Center" Height="180" Grid.Row="0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="345" />
+        <TextBox Name="TB_PassOutput" IsReadOnly="True" HorizontalAlignment="Center" Height="180" Grid.Row="0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="345" />
         <ComboBox Name="CB_PassLenght" HorizontalAlignment="Left" Margin="21,77,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" SelectionChanged="CB_PassLenght_SelectionChanged">
             <ComboBoxItem>4</ComboBoxItem>
             <ComboBoxItem>5</ComboBoxItem>
