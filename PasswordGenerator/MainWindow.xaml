@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PasswordGenerator"
         mc:Ignorable="d"
-        Title="Password Generator 2000" Height="515" Width="365" ResizeMode="NoResize" WindowStyle="ThreeDBorderWindow">
+        Title="Password Generator 2000" Height="515" Width="365" ResizeMode="NoResize" WindowStyle="ToolWindow">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#FF2E3240"/>
@@ -20,19 +20,9 @@
                 <GradientStop Color="White" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="200"/>
-            <RowDefinition Height="100"/>
-        </Grid.RowDefinitions>
 
-        <Grid Name="ToolBar" Grid.Row="0" Margin="11,0,-11,0">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <Image Height="25" Width="25"/>
-                <Image Height="25" Width="25"/>
-            </StackPanel>
-        </Grid>
-        <TextBox Name="TB_PassOutput" IsReadOnly="True" HorizontalAlignment="Center" Height="180" Grid.Row="0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="345" />
-        <ComboBox Name="CB_PassLenght" HorizontalAlignment="Left" Margin="21,77,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" SelectionChanged="CB_PassLenght_SelectionChanged">
+        <TextBox Name="TB_PassOutput" IsReadOnly="True" HorizontalAlignment="Center" Height="180" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="345" Margin="0,29,0,0" />
+        <ComboBox Name="CB_PassLenght" HorizontalAlignment="Left" Margin="10,296,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CB_PassLenght_SelectionChanged">
             <ComboBoxItem>4</ComboBoxItem>
             <ComboBoxItem>5</ComboBoxItem>
             <ComboBoxItem>6</ComboBoxItem>
@@ -40,9 +30,19 @@
             <ComboBoxItem>8</ComboBoxItem>
             <ComboBoxItem>9</ComboBoxItem>
             <ComboBoxItem>10</ComboBoxItem>
+            <ComboBoxItem>11</ComboBoxItem>
+            <ComboBoxItem>12</ComboBoxItem>
+            <ComboBoxItem>13</ComboBoxItem>
+            <ComboBoxItem>14</ComboBoxItem>
+            <ComboBoxItem>15</ComboBoxItem>
+            <ComboBoxItem>16</ComboBoxItem>
+            <ComboBoxItem>17</ComboBoxItem>
+            <ComboBoxItem>18</ComboBoxItem>
+            <ComboBoxItem>19</ComboBoxItem>
+            <ComboBoxItem>20</ComboBoxItem>
         </ComboBox>
-        <RadioButton Content="Intager" HorizontalAlignment="Left" Margin="21,10,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="RB_Integer"/>
-        <RadioButton Content="Character" HorizontalAlignment="Left" Margin="21,30,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="RB_Character"/>
-        <RadioButton Content="Crash" HorizontalAlignment="Left" Margin="21,50,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="RB_Crash"/>
+        <RadioButton Content="Intager" HorizontalAlignment="Left" Margin="10,229,0,0" VerticalAlignment="Top" Checked="RB_Integer"/>
+        <RadioButton Content="Character" HorizontalAlignment="Left" Margin="10,249,0,0" VerticalAlignment="Top" Checked="RB_Character"/>
+        <RadioButton Content="Crash" HorizontalAlignment="Left" Margin="10,269,0,0" VerticalAlignment="Top" Checked="RB_Crash"/>
     </Grid>
 </Window>
